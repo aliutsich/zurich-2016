@@ -25,7 +25,7 @@ contract CrowdCoin {
 
         function cashout() {
 
-                owner.send(this.balance);
+               bool success = owner.send(this.balance);
         }
 
 
